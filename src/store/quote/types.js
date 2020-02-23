@@ -1,0 +1,3 @@
+export const CALL_QUOTE_DATA = 'CALL_QUOTE_DATA';
+export const GET_QUOTE_DATA = 'GET_QUOTE_DATA';
+export const ERROR_QUOTE_DATA = 'ERROR_QUOTE_DATA';

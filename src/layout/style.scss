@@ -1,0 +1,23 @@
+@import "../App.scss";
+
+.layout_container {
+  @include flex;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+
+  > .component_content{
+    max-width: 992px;
+    width:100%;
+    margin: 75px 0px;
+
+    > h1 {
+        font-size: 2rem;
+        padding: 0px 0px 25px;
+        color: #1B1AF4;
+        font-weight:600;
+    }
+  }
+}
+
+

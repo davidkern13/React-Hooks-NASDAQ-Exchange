@@ -1,0 +1,77 @@
+@import "../../App.scss";
+@import '../../style/media-query.scss';
+
+form {
+    @include flex-center;
+    flex-direction: column;
+
+    > ul{
+
+      padding-inline-start: 0px !important;
+
+      display: flex;
+      width: 100%;
+      background: #fff;
+      border-radius: 5px;
+      flex-direction: column;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+
+      > li {
+        list-style-type: none;
+        @include flex;
+        @include transition;
+        @include pointer;
+        width: 100%;
+        padding: 15px 20px;
+
+        &:hover{
+            background-color: $main-bg;
+
+            > p{
+                color: $main-blue;
+            }
+        }
+
+        &:first-child{
+          border-bottom: 1px solid #eee;
+        }
+
+        > p{
+          color: $main-color;
+          flex: 1;
+          text-align: left;
+
+          &:first-child{
+            width: 100%;
+            max-width:500px;
+            flex: 5;
+          }
+        }
+      }
+    }
+
+    > input[type=submit] {
+        @include pointer;
+        @include transition;
+        outline: none;
+        color: $main-bg;
+        background-color: $main-green;
+        border-radius:5px;
+        padding: 0.8rem 1.3rem;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+        border: 1px solid transparent;
+        margin: 50px 0px 0px 0px;
+
+        &:hover{
+            background-color: $main-bg;
+            border: 1px solid $main-green;
+            color: $main-green;
+        }
+
+        @include tablet {
+            @include flex;
+             margin: 25px auto 0px;
+        }
+    }
+}
+
