@@ -33,7 +33,6 @@ const Exchange = () => {
         event.preventDefault();
 
         !_.isEmpty(checkedItems) ? dispatch(callQuoteSaga(createStringFromObject(checkedItems))) : setError(true);
-
      }
 
     return (
