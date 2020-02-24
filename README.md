@@ -1,5 +1,7 @@
 ## React Hooks NASDAQ Exchange Application
 
+React hooks app for test
+
 Stack:
 
 - Rect Hooks
