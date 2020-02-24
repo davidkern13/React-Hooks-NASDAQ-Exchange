@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
 import { initialStore } from "./store/index";
 import { callExchangeSaga } from "./store/exchange/actions";
 
@@ -13,9 +12,7 @@ const store = initialStore();
 store.dispatch(callExchangeSaga());
 
 ReactDOM.render(
-    <Provider store={store}>
         <App />,
-    </Provider>,
     document.getElementById("root")
 );
 
